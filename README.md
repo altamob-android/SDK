@@ -1,0 +1,2 @@
+# SDK
+Altamob AD SDK
