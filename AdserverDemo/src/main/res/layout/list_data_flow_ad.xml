@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_ad_wall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card:cardBackgroundColor="@android:color/white"
+    android:layout_margin="8dp"
+    card:cardCornerRadius="5dp"
+    card:cardElevation="2dp"
+    card:cardMaxElevation="@dimen/cardview_default_elevation">
+    <!--cardMaxElevation：最大卡片阴影的宽度-->
+    <!--cardElevation:卡片阴影的宽度-->
+    <!--cardBackgroundColor:卡片的背景颜色-->
+    <!--cardCornerRadius ：卡片的圆角半径-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_ad_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/cardview_dark_background" />
+
+        <TextView
+            android:layout_toRightOf="@id/iv_ad_icon"
+            android:layout_toLeftOf="@id/btn_ad_install"
+            android:layout_marginRight="8dp"
+            android:id="@+id/tv_ad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="18sp"
+            tools:text="app name" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_ad_install"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_green_dark"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="INSTALL"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

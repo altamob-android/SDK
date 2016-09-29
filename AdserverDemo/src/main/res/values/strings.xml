@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AderverDemo</string>
+    <string name="app_key">f00b7979-889a-cb32-e5fd-13c2a440e923</string>
+    <string name="natived_ad">原生广告</string>
+    <string name="data_flow_ad">数据流广告</string>
+    <string name="ad_wall">广告墙</string>
+</resources>

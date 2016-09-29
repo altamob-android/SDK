@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card:cardBackgroundColor="@android:color/white"
+    card:cardCornerRadius="5dp"
+    card:cardElevation="2dp"
+    card:cardMaxElevation="@dimen/cardview_default_elevation">
+    <!--cardMaxElevation：最大卡片阴影的宽度-->
+    <!--cardElevation:卡片阴影的宽度-->
+    <!--cardBackgroundColor:卡片的背景颜色-->
+    <!--cardCornerRadius ：卡片的圆角半径-->
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:textSize="16sp"
+        tools:text="content" />
+
+</android.support.v7.widget.CardView>
